@@ -1,12 +1,14 @@
+<!--根组件-->
 <template>
   <div id="app">
      <router-view/>
-     <FooterGuide/>
+     <FooterGuide v-show="$route.meta.showFooter"/>
   </div>
 </template>
 
 <script>
   import FooterGuide from './components/FooterGuide/FooterGuide.vue'
+
   export default {
     data(){
       return {}
