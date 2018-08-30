@@ -6,7 +6,7 @@ import {
 import {
   reqAddress,
   reqCategorys,
-  reqSho
+  reqShops
 }from '../api'
 export default {
   //异步获取当前地址信息

@@ -10,9 +10,11 @@
   import FooterGuide from './components/FooterGuide/FooterGuide.vue'
 
   export default {
-    data(){
-      return {}
+    mounted () {
+      // 分发给action发ajax获取address数据
+      this.$store.dispatch('getAddress')
     },
+
     components:{
       FooterGuide
     }
