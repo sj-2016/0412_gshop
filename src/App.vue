@@ -8,11 +8,14 @@
 
 <script>
   import FooterGuide from './components/FooterGuide/FooterGuide.vue'
+ import axios from 'axios'
 
   export default {
     mounted () {
       // 分发给action发ajax获取address数据
       this.$store.dispatch('getAddress')
+      // 分发给action发ajax获取user数据
+      this.$store.dispatch('getUser')
     },
 
     components:{
